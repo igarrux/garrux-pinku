@@ -9,6 +9,7 @@ Pinku has [folder paths for developers](#folders), support for Spotify and many 
 
 > there is currently no installer for windows, but you can follow [this guide](https://configs.igarrux.com/oh-my-posh#windows) for windows installation
 
+> If you have the capability, it would be great if you make a pull request adding the windows script. 
 
 Bash or zsh on WSL, Linux and Mac
 ```bash
