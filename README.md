@@ -35,7 +35,7 @@ Are you using node? Here's your version
 ![Pinku terminal node](readme-files/terminal-node.png)
 
 Or Reac?    
-![Pinku terminal react](./readme-files/terminal-reac.png)
+![Pinku terminal react](./readme-files/terminal-react.png)
 
 Or git?   
 ![Pinku terminal git](readme-files/terminal-git.png)
@@ -67,6 +67,8 @@ Or .... Spotify?
 18. WSL
 
 ## Folders 
+
+
 
 Fish is developer oriented, so there are icons that represent development folders, these must be in a specific location to be displayed. 
 
