@@ -15,12 +15,12 @@ Pinku has [folder paths for developers](#folders), support for Spotify and many 
 
 Bash or zsh on WSL, Linux and Mac
 ```bash
-curl -fsSL https://pinku.igarrux.com/install.sh | bash
+curl -fsSL https://pinku.igarrux.com/install.sh | sh
 ```
 
 Fish on WSL, Linux and Mac
 ```fish
-curl -fsSL https://pinku.igarrux.com/install.fish | bash
+curl -fsSL https://pinku.igarrux.com/install.fish | fish
 ```
 
 After installation, follow the guide below to configure the icon fonts 

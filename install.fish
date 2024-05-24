@@ -5,7 +5,7 @@ echo -e "\e[35mWelcome to Pinku Theme installation\e[0m"
 wget https://raw.githubusercontent.com/garrux-pinku/main/pinku-theme.omp.json -qO pinku-theme.omp.json 
 # check if oh-my-posh is installed
 echo "Verifying that oh-my-posh is installed"
-if command -q oh-my-posha
+if command -q oh-my-posh
     echo -e "\e[96moh-my-posh ✅\e[0m"
 else
     echo -e "\e[33moh-my-posh is not installed, do you want to install it? [Y/n]\e[0m"
