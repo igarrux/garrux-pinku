@@ -21,22 +21,18 @@ mv ./pinku-theme.omp.json ~/.oh-my-posh/themes
 # Config oh-my-posh ant theme
 echo -e "\e[35mConfiguring the theme...\e[0m"
 
-if [[ "$SHELL" == *"bash"* ]]; then
+if [[ "$0" == *"bash"* ]]; then
     echo "eval \"\$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.profile
     echo "eval \"\$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.bashrc
-    echo "eval \"\$(oh-my-posh init zsh --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.zshrc
     eval "$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')"
 
-elif [[ "$SHELL" == *"fish"* ]]; then
-    echo 'oh-my-posh init fish --config ~/.oh-my-posh/themes/pinku-theme.omp.json | source' >>~/.config/fish/config.fish
-    eval "$(oh-my-posh init fish --config '~/.oh-my-posh/themes/pinku-theme.omp.json')"
-
-elif [[ "$SHELL" == *"zsh"* ]]; then
+elif [[ "$0" == *"zsh"* ]]; then
     echo "eval \"\$(oh-my-posh init zsh --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.zshrc
     eval "$(oh-my-posh init zsh --config '~/.oh-my-posh/themes/pinku-theme.omp.json')"
 
 else
-    echo "No se puede determinar el shell del usuario."
+    echo 'oh-my-posh init fish --config ~/.oh-my-posh/themes/pinku-theme.omp.json | source' >>~/.config/fish/config.fish
+    eval "$(oh-my-posh init fish --config '~/.oh-my-posh/themes/pinku-theme.omp.json')"
 fi
 
 echo -e "\e[35m🎉 Congratulations! You already have oh-my-posh and the pinku theme. \e[0m"
