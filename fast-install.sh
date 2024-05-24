@@ -21,16 +21,16 @@ mv ./pinku-theme.omp.json ~/.oh-my-posh/themes
 # Config oh-my-posh ant theme
 echo -e "\e[35mConfiguring the theme...\e[0m"
 
-if [[ "$shell" == *"bash"* ]]; then
+if [[ "$SHELL" == *"bash"* ]]; then
     echo "eval \"\$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.profile
     echo "eval \"\$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.bashrc
     eval "$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')"
 
-elif [[ "$shell" == *"fish"* ]]; then
+elif [[ "$SHELL" == *"fish"* ]]; then
     echo "eval \"\$(oh-my-posh init fish --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.config/fish/config.fish
     eval "$(oh-my-posh init fish --config '~/.oh-my-posh/themes/pinku-theme.omp.json')"
 
-elif [[ "$shell" == *"zsh"* ]]; then
+elif [[ "$SHELL" == *"zsh"* ]]; then
     echo "eval \"\$(oh-my-posh init zsh --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.zshrc
     eval "$(oh-my-posh init zsh --config '~/.oh-my-posh/themes/pinku-theme.omp.json')"
 
