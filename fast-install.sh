@@ -28,7 +28,7 @@ if [[ "$SHELL" == *"bash"* ]]; then
     eval "$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')"
 
 elif [[ "$SHELL" == *"fish"* ]]; then
-    echo "eval \"\$(oh-my-posh init fish --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.config/fish/config.fish
+    echo 'oh-my-posh init fish --config ~/.oh-my-posh/themes/pinku-theme.omp.json | source' >>~/.config/fish/config.fish
     eval "$(oh-my-posh init fish --config '~/.oh-my-posh/themes/pinku-theme.omp.json')"
 
 elif [[ "$SHELL" == *"zsh"* ]]; then
