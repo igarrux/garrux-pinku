@@ -24,7 +24,7 @@ commandLine="eval \"\$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku
 echo "$commandLine" >>~/.profile
 echo "$commandLine" >>~/.bash_profile
 echo "$commandLine" >>~/.bashrc
-echo "$commandLine" >>~/.zshrc
+echo "eval \"\$(oh-my-posh init zsh --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.zshrc
 
 eval "$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')"
 echo -e "\e[35m🎉 Congratulations! You already have oh-my-posh and the pinku theme. \e[0m"
