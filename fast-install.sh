@@ -21,12 +21,12 @@ mv ./pinku-theme.omp.json ~/.oh-my-posh/themes
 # Config oh-my-posh ant theme
 echo -e "\e[35mConfiguring the theme...\e[0m"
 
-if [[ "$0" == *"bash"* ]]; then
+if [ "$0" == *"bash"* ]; then
     echo "eval \"\$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.profile
     echo "eval \"\$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.bashrc
     eval "$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')"
 
-elif [[ "$0" == *"zsh"* ]]; then
+elif [ "$0" == *"zsh"* ]; then
     echo "eval \"\$(oh-my-posh init zsh --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.zshrc
     eval "$(oh-my-posh init zsh --config '~/.oh-my-posh/themes/pinku-theme.omp.json')"
 

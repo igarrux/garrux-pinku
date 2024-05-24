@@ -17,7 +17,7 @@ Pinku has [folder paths for developers](#folders), support for Spotify and many 
 Fast ``fish``, ``bash`` and ``zsh`` install 
 > This will install the theme, install oh-my-posh if it is not on the system and configure the theme.
 ```bash
-curl -fsSL https://pinku.igarrux.com/fast-install.sh | bash
+curl -fsSL https://pinku.igarrux.com/fast-install.sh | sh
 ```
 
 Bash or on WSL, Linux and Mac
