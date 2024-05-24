@@ -45,6 +45,5 @@ echo "now just configure the font in your terminal, you can see a tutorial at ht
 echo "https://configs.igarrux.com is unavailable "
 
 source ~/.zshrc
-source ~/.config/fish/config.fish
 source ~/.bashrc
 source ~/.profile
