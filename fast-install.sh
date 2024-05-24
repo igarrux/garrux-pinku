@@ -24,15 +24,18 @@ echo "\e[35mConfiguring the theme...\e[0m"
 if command -v "bash" &>/dev/null; then
     echo "eval \"\$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.profile
     echo "eval \"\$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.bashrc
+    bash
 fi 
 
 if command -v "zsh" &>/dev/null; then
     echo "eval \"\$(oh-my-posh init zsh --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.zshrc
+    zsh
 fi
 
 if command -v "fish" &>/dev/null; then
     echo "oh-my-posh init fish --config ~/.oh-my-posh/themes/pinku-theme.omp.json | source" >>~/.config/fish/config.fish
     echo "i love fish"
+    fish
 fi
 
 
