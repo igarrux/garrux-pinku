@@ -5,6 +5,8 @@
 
 Pinku has [folder paths for developers](#folders), support for Spotify and many [technologies](#supports) and an attractive and eye-catching design.
 
+<h2>The documentation on configs.garrux.com is temporarily unavailable.</h2>
+
 ## Installation
 
 > there is currently no installer for windows, but you can follow [this guide](https://configs.igarrux.com/oh-my-posh#windows) for windows installation
