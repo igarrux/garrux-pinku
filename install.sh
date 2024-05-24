@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo -e "\e[35m Welcome to Pinku Theme installation\e[0m"
 wget https://raw.githubusercontent.com/garrux-pinku/main/pinku-theme.omp.json -qO pinku-theme.omp.json
