@@ -40,7 +40,4 @@ fi
 echo -e "\e[35m🎉 Congratulations! You already have oh-my-posh and the pinku theme. \e[0m"
 echo "now just configure the font in your terminal, you can see a tutorial at https://configs.igarrux.com/terminal-font"
 echo "https://configs.igarrux.com is unavailable "
-
-source ~/.zshrc
-source ~/.bashrc
-source ~/.profile
+echo -e "\e[31mCLOSE THIS TERMINAL AND OPEN A NEW TERMINAL\e[0m"
