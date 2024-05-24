@@ -20,12 +20,12 @@ mv ./pinku-theme.omp.json ~/.oh-my-posh/themes
 
 # Config oh-my-posh ant theme
 echo -e "\e[35mConfiguring the theme...\e[0m"
-commandLine="eval \"\$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\""
-echo "$commandLine" >>~/.profile
-echo "$commandLine" >>~/.bash_profile
-echo "$commandLine" >>~/.bashrc
+echo "eval \"\$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.profile
+echo "eval \"\$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.bash_profile
+echo "eval \"\$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.bashrc
 echo "eval \"\$(oh-my-posh init zsh --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.zshrc
+echo "eval \"\$(oh-my-posh init fish --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.config/fish/config.fish 
 
-eval "$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')"
+exit
 echo -e "\e[35m🎉 Congratulations! You already have oh-my-posh and the pinku theme. \e[0m"
 echo "now just configure the font in your terminal, you can see a tutorial at https://configs.igarrux.com/terminal-font"
