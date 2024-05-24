@@ -15,7 +15,7 @@ Pinku has [folder paths for developers](#folders), support for Spotify and many 
 
 Bash or zsh on WSL, Linux and Mac
 ```bash
-curl -fsSL https://pinku.igarrux.com/install.sh | sh
+curl -fsSL https://pinku.igarrux.com/install.sh | bash
 ```
 
 Fish on WSL, Linux and Mac
