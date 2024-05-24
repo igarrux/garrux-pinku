@@ -31,7 +31,7 @@ elif [[ "$0" == *"zsh"* ]]; then
     eval "$(oh-my-posh init zsh --config '~/.oh-my-posh/themes/pinku-theme.omp.json')"
 
 else
-    echo 'oh-my-posh init fish --config ~/.oh-my-posh/themes/pinku-theme.omp.json | source' >>~/.config/fish/config.fish
+    echo "oh-my-posh init fish --config ~/.oh-my-posh/themes/pinku-theme.omp.json | source" >>~/.config/fish/config.fish
     eval "$(oh-my-posh init fish --config '~/.oh-my-posh/themes/pinku-theme.omp.json')"
 fi
 
