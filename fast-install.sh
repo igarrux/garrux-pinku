@@ -24,8 +24,8 @@ echo -e "\e[35mConfiguring the theme...\e[0m"
 if [[ "$SHELL" == *"bash"* ]]; then
     echo "eval \"\$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.profile
     echo "eval \"\$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.bashrc
-    eval "$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')"
     echo "eval \"\$(oh-my-posh init zsh --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.zshrc
+    eval "$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')"
 
 elif [[ "$SHELL" == *"fish"* ]]; then
     echo "eval \"\$(oh-my-posh init fish --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.config/fish/config.fish
@@ -41,3 +41,5 @@ fi
 
 echo -e "\e[35m🎉 Congratulations! You already have oh-my-posh and the pinku theme. \e[0m"
 echo "now just configure the font in your terminal, you can see a tutorial at https://configs.igarrux.com/terminal-font"
+exit 
+exit
