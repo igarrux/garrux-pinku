@@ -23,14 +23,14 @@ curl -fsSL https://pinku.igarrux.com/fast-install.sh | bash
 Bash or zsh on WSL, Linux and Mac
 ```bash
 curl -fsSL https://pinku.igarrux.com/install.sh -o install.sh
-chmod +x install.sh
+sudo chmod +x install.sh
 ./install.sh
 ```
 
 Fish on WSL, Linux and Mac
 ```fish
 curl -fsSL https://pinku.igarrux.com/install.fish -o install.fish
-chmod +x install.fish
+sudo chmod +x install.fish
 ./install.fish
 ```
 
