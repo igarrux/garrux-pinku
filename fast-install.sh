@@ -21,9 +21,6 @@ mv ./pinku-theme.omp.json ~/.oh-my-posh/themes
 # Config oh-my-posh ant theme
 echo -e "\e[35mConfiguring the theme...\e[0m"
 
-echo -e "\e[35m🎉 Congratulations! You already have oh-my-posh and the pinku theme. \e[0m"
-echo "now just configure the font in your terminal, you can see a tutorial at https://configs.igarrux.com/terminal-font"
-echo "https://configs.igarrux.com is unavailable "
 
 if command -v "bash" &>/dev/null; then
     echo "eval \"\$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.profile
@@ -41,3 +38,13 @@ if command -v "fish" &>/dev/null; then
     echo "i love fish"
     fish
 fi
+
+
+echo -e "\e[35m🎉 Congratulations! You already have oh-my-posh and the pinku theme. \e[0m"
+echo "now just configure the font in your terminal, you can see a tutorial at https://configs.igarrux.com/terminal-font"
+echo "https://configs.igarrux.com is unavailable "
+
+source ~/.zshrc
+source ~/.config/fish/config.fish
+source ~/.bashrc
+source ~/.profile
