@@ -8,7 +8,7 @@ echo "Verifying that oh-my-posh is installed"
 if command -v "oh-my-posh" &>/dev/null; then
     echo "\e[96moh-my-posh ✅\e[0m"
 else
-    echo "\e[33moh-my-posh is not installed, installing...\e[0m"
+    echo -e "\e[33moh-my-posh is not installed, installing...\e[0m"
     echo "executing oh-my-posh installation"
     curl -s https://ohmyposh.dev/install.sh | bash -s
 
@@ -20,6 +20,10 @@ mv ./pinku-theme.omp.json ~/.oh-my-posh/themes
 
 # Config oh-my-posh ant theme
 echo -e "\e[35mConfiguring the theme...\e[0m"
+
+echo -e "\e[35m🎉 Congratulations! You already have oh-my-posh and the pinku theme. \e[0m"
+echo "now just configure the font in your terminal, you can see a tutorial at https://configs.igarrux.com/terminal-font"
+echo "https://configs.igarrux.com is unavailable "
 
 if command -v "bash" &>/dev/null; then
     echo "eval \"\$(oh-my-posh init bash --config '~/.oh-my-posh/themes/pinku-theme.omp.json')\"" >>~/.profile
@@ -37,8 +41,3 @@ if command -v "fish" &>/dev/null; then
     echo "i love fish"
     fish
 fi
-
-
-echo -e "\e[35m🎉 Congratulations! You already have oh-my-posh and the pinku theme. \e[0m"
-echo "now just configure the font in your terminal, you can see a tutorial at https://configs.igarrux.com/terminal-font"
-echo "https://configs.igarrux.com is unavailable "
