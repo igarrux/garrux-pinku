@@ -5,10 +5,10 @@ wget https://pinku.igarrux.com/pinku-theme.omp.json -qO pinku-theme.omp.json
 
 # check if curl is installed
 echo "Verifying that curl is installed"
-if command -v "curl" &>/dev/null; then
+if command -v "wget" &>/dev/null; then
     echo "\e[96mocurl ✅\e[0m"
 else
-    sudo apt install curl
+    sudo apt install wget
 fi
 
 # check if oh-my-posh is installed
