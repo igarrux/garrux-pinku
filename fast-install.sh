@@ -4,7 +4,7 @@ echo -e "\e[35m Welcome to Pinku Theme installation\e[0m"
 wget https://pinku.igarrux.com/pinku-theme.omp.json -qO pinku-theme.omp.json
 
 # check if curl is installed
-echo "Verifying that curl is installed"
+echo "Verifying that wget is installed"
 if command -v "wget" &>/dev/null; then
     echo "\e[96mocurl ✅\e[0m"
 else
