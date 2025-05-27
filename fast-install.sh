@@ -3,6 +3,14 @@
 echo -e "\e[35m Welcome to Pinku Theme installation\e[0m"
 wget https://pinku.igarrux.com/pinku-theme.omp.json -qO pinku-theme.omp.json
 
+# check if curl is installed
+echo "Verifying that curl is installed"
+if command -v "curl" &>/dev/null; then
+    echo "\e[96mocurl ✅\e[0m"
+else
+    sudo apt install curl
+fi
+
 # check if oh-my-posh is installed
 echo "Verifying that oh-my-posh is installed"
 if command -v "oh-my-posh" &>/dev/null; then
@@ -10,9 +18,22 @@ if command -v "oh-my-posh" &>/dev/null; then
 else
     echo -e "\e[33moh-my-posh is not installed, installing...\e[0m"
     echo "executing oh-my-posh installation"
+    echo "export PATH=$PATH:/root/.local/bin" >> ~/.bashrc
+    echo "export PATH=$PATH:/root/.local/bin" >> ~/.zshrc
+    
     curl -s https://ohmyposh.dev/install.sh | bash -s
 
 fi
+
+# check if unzip is installed
+echo "Verifying that unzip is installed"
+if command -v "unzip" &>/dev/null; then
+    echo "\e[96mounzip ✅\e[0m"
+else
+    sudo apt install unzip
+fi
+
+
 
 # Move theme to oh-my-posh themes folder
 mkdir -p ~/.oh-my-posh/themes
